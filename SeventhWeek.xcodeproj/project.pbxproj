@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		118DA32A2D5068FC0022E16F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 118DA3292D5068FC0022E16F /* SnapKit */; };
+		118DA3832D508F9D0022E16F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 118DA3822D508F9D0022E16F /* Alamofire */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		118DA3062D5043970022E16F /* SeventhWeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeventhWeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -14,7 +19,7 @@
 		118DA3182D5043980022E16F /* Exceptions for "SeventhWeek" folder in "SeventhWeek" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				App/Info.plist,
 			);
 			target = 118DA3052D5043970022E16F /* SeventhWeek */;
 		};
@@ -36,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				118DA32A2D5068FC0022E16F /* SnapKit in Frameworks */,
+				118DA3832D508F9D0022E16F /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,8 @@
 			);
 			name = SeventhWeek;
 			packageProductDependencies = (
+				118DA3292D5068FC0022E16F /* SnapKit */,
+				118DA3822D508F9D0022E16F /* Alamofire */,
 			);
 			productName = SeventhWeek;
 			productReference = 118DA3062D5043970022E16F /* SeventhWeek.app */;
@@ -107,6 +116,10 @@
 			);
 			mainGroup = 118DA2FD2D5043970022E16F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				118DA3282D5068FC0022E16F /* XCRemoteSwiftPackageReference "SnapKit" */,
+				118DA3812D508F9D0022E16F /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 118DA3072D5043970022E16F /* Products */;
 			projectDirPath = "";
@@ -147,8 +160,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W43DLLFB4Q;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SeventhWeek/Info.plist;
+				INFOPLIST_FILE = SeventhWeek/App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "럭끼세븐";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "\"쓰껄?\"";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -179,8 +193,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W43DLLFB4Q;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SeventhWeek/Info.plist;
+				INFOPLIST_FILE = SeventhWeek/App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "럭끼세븐";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "\"쓰껄?\"";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -343,6 +358,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		118DA3282D5068FC0022E16F /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		118DA3812D508F9D0022E16F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		118DA3292D5068FC0022E16F /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 118DA3282D5068FC0022E16F /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		118DA3822D508F9D0022E16F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 118DA3812D508F9D0022E16F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 118DA2FE2D5043970022E16F /* Project object */;
 }
