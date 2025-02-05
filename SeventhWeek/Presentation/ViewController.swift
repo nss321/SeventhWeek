@@ -41,15 +41,15 @@ final class ViewController: BaseViewController {
         
 //        checkDeviceLocation()
         checkCurrentLocation()
-        NetworkManager.shared.getLotto { response in
-            switch response {
-            case .success(let successe):
-                // lotto
-            case .failure(let error):
-                // alert
-            }
-            
-        }
+//        NetworkManager.shared.getLotto { response in
+//            switch response {
+//            case .success(let successe):
+//                // lotto
+//            case .failure(let error):
+//                // alert
+//            }
+//            
+//        }
     }
     
     override func configDelegate() {
